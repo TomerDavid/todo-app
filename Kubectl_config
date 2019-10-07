@@ -1,0 +1,26 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURERENDQWZTZ0F3SUJBZ0lSQUlPelJtcVlDd2hUdkhzT05QOVppdEV3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa00yVTRZbVk1Tm1FdFlUTXlZUzAwTTJFekxXRXlOV010TnpGbVpESmlZVE13TVRaawpNQjRYRFRFNU1Ea3lNekUyTVRJMU5Gb1hEVEkwTURreU1URTNNVEkxTkZvd0x6RXRNQ3NHQTFVRUF4TWtNMlU0ClltWTVObUV0WVRNeVlTMDBNMkV6TFdFeU5XTXROekZtWkRKaVlUTXdNVFprTUlJQklqQU5CZ2txaGtpRzl3MEIKQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBcnJmUVVKeExNSktUQTdsV2tlRWJWVHBUNERKTm5HaWVWN1ptSGQ1MQpTMC9QTDFpNlpIb2xGUkl5dHF2TXY0UUV0SzlZQzEzM0swRGt4d0NPRUdRMlZhd1FueHNLOUQ5RHpIQUpqRXNjCkhIYmFlOFJWMEFCc3QxS1ZZRkRKdGI5RlBwSDBEMGo5UHM3cmNKUFJQQkpRa05HL0J4c2Flck9FaVZmcE9JakUKNGtwTnlDanBTOUJrWFZaMnNzKzhGWUplcG1VNWMzcGVEajJnVEl2R0svOVloV0NrbjFPZGdHYVAwV1hkQXYxTwpFYVRqQXlwVXU2L0QxN0VZcjVFditFNXM1OWI0NDNtWTh5aXIxMTBVVWlWellyWTRNNDZML1lzY2xvRWtyZG5aCkptcHdjbTRrWHJjamF6dmlMT3dGNXNjNGJ0eHlISnFGMHBlbzZrNDRtQ3kySFFJREFRQUJveU13SVRBT0JnTlYKSFE4QkFmOEVCQU1DQWdRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQQpYTUllWkFva0R4S1ZzOUJGdUVpNEkzMFlpU0MxNnlKWHAvRVp1cFlrQ1ZQN25Bck1yWmVValhTRUR1Q1lZcmFjClYwTVJQdS9EMTZ5bXZmNFYyalBic0tWZm8xbHVKNi9kSEVBT3V4Y2xhbTdWOFZTMVptNkMvcWk1Um9pYjg0bngKYzBJWnZEZDZyYzZGS1JjOGFBVjVaaXlLRTlKdzhOUCtLdzVST2dSVU9ra0Zla2RYUSt0RloybXpMbEhZRUpYTQowUnY1cmpGR0FXV3JpTDE1WkJETUVkKzF6VkhKSlFXclFVUjYwakJ4WjVjbm5icWlIT2xjNTdKTXdFZzA4TTJjClJrM3g2ZVhhWWQxZndCcm1CajNUekxidXVXWW9uL0NJeEUxdVJvQXFDTWtiazhVZUYrWWxhT0hPcEtUSWlvbDcKbkdPWWVvMVMxRzREMlE4RFljcDNZUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://35.228.6.84
+  name: gke_fluid-amulet-252718_europe-north1-a_tomer-lab
+contexts:
+- context:
+    cluster: gke_fluid-amulet-252718_europe-north1-a_tomer-lab
+    user: gke_fluid-amulet-252718_europe-north1-a_tomer-lab
+  name: gke_fluid-amulet-252718_europe-north1-a_tomer-lab
+current-context: gke_fluid-amulet-252718_europe-north1-a_tomer-lab
+kind: Config
+preferences: {}
+users:
+- name: gke_fluid-amulet-252718_europe-north1-a_tomer-lab
+  user:
+    auth-provider:
+      config:
+        access-token: ya29.Iq4Bmwc12_QoIkogIAARrXyE8O2_a0n9XOXr5zmoh8bZMVaYMH74mj7y4ekX-JcEGjbQH74WKAgq-ls3Mk49ipahZbIAhSqTAL9T8P86zMCLAMpJYv9Z14L_lQc2W10zLpxbWKCobQFmS6h8yY-OffeolMLWA_W-zaLtmlZYuU28LLVqIKs9u26rUf8ZmMTOUqNZCOrg_cABfE2ZRGpljsb6FvgKkNlEe5CkN9aLKq9d
+        cmd-args: config config-helper --format=json
+        cmd-path: /google/google-cloud-sdk/bin/gcloud
+        expiry: "2019-10-07T17:18:37Z"
+        expiry-key: '{.credential.token_expiry}'
+        token-key: '{.credential.access_token}'
+      name: gcp
